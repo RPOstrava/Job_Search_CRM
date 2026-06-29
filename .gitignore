@@ -1,7 +1,21 @@
-# Ignorovat SQLite databázi a virtuální prostředí
-database/*.db
-instance/
+# Virtual environment
+venv/
+
+# Python cache
 __pycache__/
-*.pyc
-.venv/
-vnev/
+*.py[cod]
+
+# SQLite database (real data)
+database/applications.db
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
