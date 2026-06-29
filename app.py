@@ -82,4 +82,9 @@ def delete_application(id):
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
+    # Automaticky vytvoří složku/databázi a tabulku při startu, pokud neexistuje
+    from database import init_db
+    init_db()
+    
     app.run(debug=True)
+
