@@ -1,6 +1,6 @@
 # Job Search CRM
 
-A lightweight application tracking system built with Python and Flask to help me better organize my work requests.
+A lightweight application tracking system built with Python and Flask to help me better organize my job applications.
 
 ## Tech Stack
 * **Backend:** Python, Flask
@@ -11,7 +11,13 @@ A lightweight application tracking system built with Python and Flask to help me
 * Add, edit, and delete job applications (Full CRUD).
 * Filter applications by status.
 * Automatic sorting from the newest applications (`sent_date DESC`).
-* Automatic database initialization on startup.
+* Automatically creates the SQLite database on first startup.
+
+## Screenshot
+
+### Add Job Application
+
+![Add Job Application](screenshots/add_application.png)
 
 ## Local Data & Localization
 The application stores the following information for each job application:
