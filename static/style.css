@@ -1,0 +1,147 @@
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --primary-color: #0d6efd;
+    --border-color: #dee2e6;
+    
+    /* Barvy stavů */
+    --applied: #6c757d;
+    --interview: #fd7e14;
+    --rejected: #dc3545;
+    --offer: #198754;
+    --hired: #0dcaf0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Tlačítka */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary { background-color: var(--primary-color); color: white; }
+.btn-secondary { background-color: #e2e6ea; color: var(--text-color); }
+.btn-sm { padding: 4px 8px; font-size: 0.85rem; }
+.btn-edit { background-color: #fff3cd; color: #856404; margin-right: 5px;}
+.btn-delete { background-color: #f8d7da; color: #721c24; }
+
+/* Tabulka */
+.app-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.app-table th, .app-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.app-table th { background-color: #f1f3f5; }
+
+/* Stavy - Badges */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: white;
+    font-weight: bold;
+}
+.applied { background-color: var(--applied); }
+.interview { background-color: var(--interview); }
+.rejected { background-color: var(--rejected); }
+.offer { background-color: var(--offer); }
+.hired { background-color: var(--hired); }
+
+/* Formuláře */
+.form-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-form select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
