@@ -1,0 +1,7 @@
+# Ignorovat SQLite databázi a virtuální prostředí
+database/*.db
+instance/
+__pycache__/
+*.pyc
+.venv/
+vnev/
